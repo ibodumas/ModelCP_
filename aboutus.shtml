@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+<link rel="stylesheet" type="text/css" href="css/myCss1.css"><link>
+</head>
+<body>
+	<!--#include file="masterpage.html" -->
+	<h6 id="header">We are the leading supplier of classic model</h6>
+	<img id="floatright" alt="Classic Models Picture" src="images/ClassicModels.jpg" >
+	
+	<p id="homedesc">
+		Our models realistically portray models from the pasts. Product include vintage cars,
+		classic cars, trains, planes, motorcycles, trucks and buses. Materials used include
+		bakelite, diecast, plastic and wood. Most of the replicas are in the 1:18 and 1:24
+		scale sizes, which provide the optimum in detail and accuracy. All models include
+		a certificate of authenticity from thir manufacturers and come fully assembled and
+		ready for display in the home or office.
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Today's News</title>
+</head>
+<body>
+	<!--#include file="masterpage.html" -->
+	<h6 id="header">Today's News</h6>
+	<p id="newsdesc">
+		Stocks of hospital companies rose sharply and some insurance companies fell Thursday 
+		after the Supreme Court upheld a requirement that almost all Americans carry health 
+		insurance. The stock of Hospital Corp. of American, the largest private hospital 
+		chain in the United States, climbed 10 percent. Community Health Systems rose 8 
+		percent, Health Management Associates 7 percent. Quest Diagnostics, which runs 
+		laboratories, and Laborary Corp. of America both gained more than 2 percent.
+		The ruling was a win for hospital operators because it will add 32 million 
+		Americans to the rolls of the insured, vastly expanding the pool of health 
+		care consumers, said Jeffrey Loo, a stock analyst with S&amp;P Capital IQ, a 
+		research group. Under the current system, about one-fourth of the care provided 
+		by hospitals is never paid for, either because debts go bad or because the patient is 
+		uninsured, Loo said. He said the law will cut the portion of care that is not paid for 
+		in half, However, Gary Taylor, a financial analyst for Citi Investment Research, warned 
+		clients that hospital stocks could erase all their gains from the court decision if 
+		Mitt Romney is elected president this fall. He has pledged to repel the law. Many 
+		insurance companies fell sharply after the ruling was announced. They bounced around 
+		while reporters and analysts dissected the court's ruling, and they later recovered 
+		some of the losses.
+	</p>
+</body>
+</html>

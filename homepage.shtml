@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Classic Model - Home</title>
+
+<link rel="stylesheet" type="text/css" href="css/myCss1.css"><link>
+
+</head>
+<body id="homeBody">
+	<!--#include file="masterpage.html" -->
+
+	
+		
+</body>
+</html>

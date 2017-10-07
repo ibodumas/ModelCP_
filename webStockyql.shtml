@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stock Value</title>
+<link rel="stylesheet" type="text/css" href="css/myCss1.css"> <link>
+<script 
+	type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js ">
+</script>
+
+<script type="text/javascript" src="jvs/scr1.js"></script>
+
+</head>
+<body>
+	<!--#include file="masterpage.html" -->
+	<h6 id="header">Stock Exchange Price Index</h6>
+	<div id=yqldiv>
+		<p>
+			<a>Stock Symbol:</a>  <input type="text" id="symbol" value="FB"/>
+		</p>
+		<p>
+			<a>Current Value:</a>  <a id="value"></a> 
+		</p>
+		<p>
+			<a>Days High:    </a> &nbsp;&nbsp;&nbsp;&nbsp; <a id="dayHigh"></a> 
+		</p>
+		<p>
+			<a>Days Low:    </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a id="dayLow"></a> 
+		</p>
+		<p>
+			<a>Years High:  </a> &nbsp;&nbsp;&nbsp; <a id="yearHigh"></a> 
+		</p>
+		<p>
+			<a>Years Low:   </a> &nbsp;&nbsp;&nbsp;&nbsp; <a id="yearLow"></a> 
+		</p>
+		
+		<p>
+			<input type="button" id="getStockValue" value="GetValue"/>
+		</p>
+	</div>
+</body>
+</html>

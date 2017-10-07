@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Airport Status</title>
+<link rel="stylesheet" type="text/css" href="css/myCss1.css"> <link>
+<script 
+	type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js ">
+</script>
+
+<script type="text/javascript" src="jvs/scr1.js"></script>
+
+</head>
+<body>
+	<!--#include file="masterpage.html"-->
+	<h6 id="header">Retrieve Airport Information</h6>
+	<div id=fxratediv>
+		<p>
+			<a>Airport Code: </a>  <input type="text" id="airport"/>
+		</p>
+		<p>
+			<a>Delay: </a>  <a id="delay"></a> 
+		</p>
+		<p>
+			<a>City: </a>  <a id="city"></a> 
+		</p>
+		<p>
+			<a>State: </a>  <a id="state"></a> 
+		</p>
+		<p>
+			<a>Name: </a>  <a id="name"></a> 
+		</p>
+		<p>
+			<a>Temp: </a>  <a id="temp"></a> 
+		</p>
+		<p>
+			<a>Wind: </a>  <a id="wind"></a> 
+		</p>
+		<p>
+			<a>Updated Time: </a>  <a id="time"></a> 
+		</p>
+		<p>
+			<a>Status: </a>  <a id="status"></a> 
+		</p>
+		<p>
+			<a>Source: </a>  <a id="credit"></a> 
+		</p>
+
+
+		<p>
+			<input type="button" id="getStatus" value="Get Status"/>
+			<input type="button" id="reset" value="Reset"/>
+		</p>
+
+	</div>
+</body>
+</html>

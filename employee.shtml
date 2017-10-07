@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Employees</title>
+<script type="text/javascript" 
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js ">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() 
+		{
+			$("#id").change(function() 
+			{	
+				var id = $("#id").val();
+				$.ajax(
+				{
+					type : 'POST',
+					url : 'EmployeeDetailsServlet',
+					data : {"id" : $("#id").val()},
+					dataType : "json",
+									
+					success : function(data) 
+					{	
+						//alert("eeee")
+						//var returnRow = JSON.parse(data);
+						//var returnRow = data;
+						//alert(data.lastName)
+						var postEmpId = data.employeeNumber
+						//alert(returnRow[0].lastName);
+						$("#lastName").val(data.lastName);
+						$("#firstName").val(data.firstName);
+						$("#email").val(data.email);
+						$("#extension").val(data.extension);
+						$("#title").val(data.jobTitle);
+					},
+					error : function(xhr, status, error) 
+					{
+						console.log('Error: ' + error.message);
+						alert('Error: ' + error.message);
+					}
+				});
+				//alert(id);
+				
+			});//change
+			
+			$('#reset').click(function() 
+			{
+				$("#id").val("");
+				$("#lastName").val("");
+				$('#firstName').val("");
+				$('#email').val("");
+				$('#extension').val("");
+				$('#title').val("");
+			});
+			
+			$("#submitF").click(function() 
+					{	
+						var id = $("#id").val();
+						$.ajax(
+						{
+							type : 'POST',
+							url : 'EmployeeDetailsServlet',
+							data : {"id" : $("#id").val()},
+							dataType : "json",
+											
+							success : function(data) 
+							{	
+								//alert("eeee")
+								//var returnRow = JSON.parse(data);
+								//var returnRow = data;
+								//alert(data.lastName)
+								var postEmpId = data.employeeNumber
+								//alert(returnRow[0].lastName);
+								$("#lastName").val(data.lastName);
+								$("#firstName").val(data.firstName);
+								$("#email").val(data.email);
+								$("#extension").val(data.extension);
+								$("#title").val(data.jobTitle);
+							},
+							error : function(xhr, status, error) 
+							{
+								console.log('Error: ' + error.message);
+								alert('Error: ' + error.message);
+							}
+						});
+						//alert(id);
+						
+					});//change
+			
+		});//ready}
+</script>
+
+</head>
+<body>
+	<!--#include file="masterpage.html" -->
+	<h6 id="header">Retrieve Employee Information</h6>
+	<div id="wrapper">
+	<div class="content">
+	<form action="">
+		<table>
+			<tr>
+				<td>Employee Number:</td>
+				<td><input type="text" id="id" size="50" /></td>
+			</tr>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" id="firstName" size="50" /></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" id="lastName" size="50" /></td>
+			</tr>
+			<tr>
+				<td>Extension:</td>
+				<td><input type="text" id="extension" size="50" /></td> 
+			</tr>
+			<tr>	
+				<td>Email:</td>
+				<td><input type="text" id="email" size="50" /></td>
+			</tr>
+			<tr>	
+				<td>Job Title:</td>
+				<td><input type="text" id="title" size="50" /></td>
+			</tr>	
+		</table>
+		<p />
+		<p>
+			<input type="button" id=sumbmitF value="Get Employee" /> 
+			<!-- <input type="reset" value="Clear Form" /> -->
+			<input type="button" id="reset" value="Reset"/>
+		</p>
+	</form>
+	</div>
+	</div>
+</body>
+
+
+</html>

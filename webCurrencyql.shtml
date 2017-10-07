@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FX Rate</title>
+<link rel="stylesheet" type="text/css" href="css/myCss1.css"> <link>
+<script 
+	type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js ">
+</script>
+
+<script type="text/javascript" src="jvs/scr1.js"></script>
+
+</head>
+<body>
+	<!--#include file="masterpage.html" -->
+	<h6 id="header">Forex Rate</h6>
+	<div id=fxratediv>
+		<p>
+			<a>From Currency: </a>  <input type="text" id="frmRate" value="EUR"/>
+		</p>
+		<p>
+			<a>To Currency: </a> &nbsp;&nbsp;&nbsp; <input type="text" id="toRate" value="USD"/>
+		</p>
+
+		<p>
+			<a>Currency Rate: </a>  <a id="value"></a> 
+		</p>
+		
+		<p>
+			<input type="button" id="getFxRate" value="GetValue"/>
+		</p>
+	</div>
+</body>
+</html>
